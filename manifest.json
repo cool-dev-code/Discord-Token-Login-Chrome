@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Discord Token Login",
+    "version": "1.0.1",
+
+    "description": "Login / get token of Discord account.",
+    "icons": {"128": "icons/logo.png"},
+
+    "browser_action": {
+        "default_popup": "popup/index.html",
+        "default_icon": "icons/logo.png"
+    },
+
+    "background": {
+        "scripts": ["popup/script.js"],
+        "persistent": true
+    },
+
+    "permissions": [
+        "http://*.discord.com/*",
+        "https://*.discord.com/*"
+    ]
+}
